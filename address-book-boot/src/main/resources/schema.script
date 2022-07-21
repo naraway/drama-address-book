@@ -1,0 +1,14 @@
+## Schema
+
+use
+addressbook
+
+db.createUser(
+  {
+    user: "addressbook",
+    pwd: "addressbook",
+    roles : [
+      { role: "readWrite", db: "addressbook" }
+    ]
+  }
+)
